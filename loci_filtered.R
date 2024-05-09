@@ -1,6 +1,7 @@
 ##### Script to filter the loci based on their percentage of length recovered
 ##### and on the percentage of samples in which they were recovered (FROM LEO-PAUL DAGALLIER)
 
+##### Taken from https://github.com/ambed0ya/Palicourea/blob/main/Loci_filtered.R (Ana's GitHub)
 
 # Load the necessary packages ---------------------------------------------
 library(ggpubr)
@@ -11,10 +12,10 @@ library(wesanderson)
 # Set the paths and load the data -----------------------------------------
 # PATH SETTING AND DATA LOADING SHOULD BE DONE PRIOR TO CALL THIS SCRIPT
 # THIS SHOULD BE DONE FOLLOWING THE COMMENTED EXAMPLE BELOW
-path_to_data <- "/PATH_TO_FOLDER_WITH_HYBPIPER_OUTPUT/"
+path_to_data <- "/Users/katherin_ag/Dropbox/PhD/R_scripts/tree_inference"
 filename = paste0(path_to_data, "/seq_lengths.tsv")
 seq_lengths_raw <- read.table(filename, header = T, row.names = 1, sep = "\t", check.names = F)
-path_to_out <- "/PATH_TO_FOLDER_WITH_HYBPIPER_OUTPUT/"
+path_to_out <- "/Users/katherin_ag/Dropbox/PhD/R_scripts/tree_inference/HybPiper"
 limit_perc_length_wanted = c(0.1, 0.20, 0.5, 0.75)
 limit_perc_nb_wanted = c(0.1, 0.20, 0.5, 0.75)
 
