@@ -12,10 +12,10 @@ library(wesanderson)
 # Set the paths and load the data -----------------------------------------
 # PATH SETTING AND DATA LOADING SHOULD BE DONE PRIOR TO CALL THIS SCRIPT
 # THIS SHOULD BE DONE FOLLOWING THE COMMENTED EXAMPLE BELOW
-path_to_data <- "/Users/katherin_ag/Dropbox/PhD/R_scripts/tree_inference/Campanulaceae/353"
-filename = paste0(path_to_data, "/seq_lengths_353.tsv")
+path_to_data <- "/Users/katherin_ag/Dropbox/PhD/R_scripts/tree_inference/Campanulaceae/uribe"
+filename = paste0(path_to_data, "/seq_lengths_uribe.tsv")
 seq_lengths_raw <- read.table(filename, header = T, row.names = 1, sep = "\t", check.names = F)
-path_to_out <- "/Users/katherin_ag/Dropbox/PhD/R_scripts/tree_inference/Campanulaceae/353_"
+path_to_out <- "/Users/katherin_ag/Dropbox/PhD/R_scripts/tree_inference/Campanulaceae/uribe/uribe_"
 limit_perc_length_wanted = c(0.1, 0.20, 0.5, 0.75)
 limit_perc_nb_wanted = c(0.1, 0.20, 0.5, 0.75)
 
